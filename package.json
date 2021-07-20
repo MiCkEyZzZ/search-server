@@ -1,0 +1,53 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "serve": "nodemon node main.js",
+    "client": "npm run start --prefix client",
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run serve\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiCkEyZzZ/search-server.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongodb"
+  ],
+  "author": "Mikhail Zhuravlev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiCkEyZzZ/search-server/issues"
+  },
+  "homepage": "https://github.com/MiCkEyZzZ/search-server#readme",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "bcrypt": "^5.0.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.31.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-loader": "^4.0.2",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.10",
+    "mongoose": "^5.13.3",
+    "nodemailer": "^6.6.3",
+    "shortid": "^2.2.15",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "cross-env": "^6.0.3",
+    "nodemon": "^2.0.12"
+  }
+}
